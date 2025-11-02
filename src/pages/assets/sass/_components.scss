@@ -1,0 +1,18 @@
+// _components.scss
+@mixin trading-card-colors {
+    background: map-get($palette-blue-gold, card-dark);
+    border: 1px solid map-get($palette-blue-gold, border-dark);
+    color: map-get($palette-blue-gold, text-primary-dark);
+}
+
+@mixin price-change-colors($change) {
+    @if $change >0 {
+        color: map-get($palette-blue-gold, success);
+        background: rgba(map-get($palette-blue-gold, success), 0.1);
+    }
+
+    @else {
+        color: map-get($palette-blue-gold, danger);
+        background: rgba(map-get($palette-blue-gold, danger), 0.1);
+    }
+}

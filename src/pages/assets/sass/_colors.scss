@@ -1,0 +1,39 @@
+// styles/_colors.scss
+$palette-blue-gold: (
+    primary-blue: #1e40af,
+    secondary-blue: #3b82f6,
+    accent-gold: #f59e0b,
+
+    bg-dark: #0f172a,
+    bg-darker: #0a0f1c,
+    surface: #1e293b,
+
+    success: #10b981,
+    danger: #ef4444,
+    warning: #f59e0b,
+    info: #06b6d4,
+
+    text-primary-dark: #f1f5f9,
+    text-secondary-dark: #cbd5e1,
+
+    border-dark: #374151
+);
+
+$palette-cyber: (
+    primary: #0066ff,
+    secondary: #8b5cf6,
+    accent: #00d4ff,
+
+    bg-dark: #0a0a0f,
+    bg-darker: #050508,
+    surface: #1a1b23,
+
+    success: #00ff88,
+    danger: #ff375f,
+    warning: #ffd600,
+
+    text-primary-dark: #e2e8f0,
+    text-secondary-dark: #94a3b8,
+
+    border-dark: #252632
+);

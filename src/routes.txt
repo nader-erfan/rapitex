@@ -1,0 +1,127 @@
+PUBLIC ROUTES (Unauthenticated)
+/
+/home
+/markets
+/market/:pair
+/trading/:pair
+/spot
+/futures
+/earn
+/buy-crypto
+/price
+/about
+/help
+/help/:article
+/contact
+/blog
+/blog/:postId
+
+AUTHENTICATION ROUTES
+/login
+/register
+/forgot-password
+/reset-password/:token
+/verify-email/:token
+/2fa-setup
+
+CUSTOMER DASHBOARD ROUTES
+/dashboard
+/dashboard/overview
+/dashboard/wallet
+/dashboard/wallet/:currency
+/dashboard/deposit
+/dashboard/deposit/:currency
+/dashboard/withdraw
+/dashboard/withdraw/:currency
+/dashboard/transfer
+/dashboard/history
+/dashboard/history/deposits
+/dashboard/history/withdrawals
+/dashboard/history/trades
+/dashboard/history/orders
+/dashboard/security
+/dashboard/security/2fa
+/dashboard/security/devices
+/dashboard/security/activity
+/dashboard/referral
+/dashboard/api-keys
+/dashboard/settings
+/dashboard/settings/profile
+/dashboard/settings/preferences
+
+TRADING ROUTES
+/trade/spot/:pair
+/trade/futures/:pair
+/trade/margin/:pair
+/orders/active
+/orders/history
+/order/:orderId
+
+EARN & STAKING ROUTES
+/earn/staking
+/earn/savings
+/earn/pool-x
+/earn/lending
+/earn/defi
+
+BUSINESS ACCOUNT ROUTES
+/business/dashboard
+/business/merchant
+/business/payment-gateway
+/business/transactions
+/business/settlement
+/business/api-management
+/business/reports
+/business/invoicing
+/business/settings
+
+INSTITUTIONAL ROUTES
+/institutional/overview
+/institutional/otc
+/institutional/custody
+/institutional/liquidity
+/institutional/prime
+
+ADMIN ROUTES
+/admin/dashboard
+/admin/users
+/admin/users/:userId
+/admin/kyc
+/admin/kyc/:applicationId
+/admin/transactions
+/admin/deposits
+/admin/withdrawals
+/admin/trading-pairs
+/admin/fees
+/admin/security
+/admin/system-health
+/admin/reports
+/admin/settings
+/admin/support-tickets
+/admin/support-tickets/:ticketId
+
+SUPPORT ROUTES
+/support
+/support/tickets
+/support/tickets/new
+/support/tickets/:ticketId
+/support/live-chat
+
+LEGAL & COMPLIANCE ROUTES
+/terms
+/privacy
+/cookie-policy
+/aml-kyc
+/regulation
+/legal
+
+API DOCUMENTATION ROUTES
+/api-docs
+/api-docs/rest
+/api-docs/websocket
+/api-docs/socketio
+
+404 ROUTE
+/404
+/*
+

@@ -1,0 +1,27 @@
+// _mixins.scss
+@mixin theme-colors($palette) {
+    --primary-color: #{map-get($palette, primary)};
+    --secondary-color: #{map-get($palette, secondary)};
+    --bg-dark: #{map-get($palette, bg-dark)};
+    --surface: #{map-get($palette, surface)};
+    --text-primary: #{map-get($palette, text-primary)};
+}
+
+@mixin apply-palette($palette-name) {
+    @if $palette-name ==blue-gold {
+        @include theme-colors($palette-blue-gold);
+    }
+
+    @else if $palette-name ==cyber {
+        @include theme-colors($palette-cyber);
+    }
+
+    @else if $palette-name ==crypto-green {
+        @include theme-colors($palette-crypto-green);
+    }
+}
+
+// Usage in your main SCSS
+:root {
+    @include apply-palette(blue-gold);
+}

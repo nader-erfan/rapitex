@@ -1,0 +1,93 @@
+// styles/main.scss
+@import './colors';
+@import './variables';
+
+// Import Reactstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~reactstrap/src/Reactstrap';
+
+// Apply color palette to Bootstrap theme
+:root {
+    // Primary colors
+    --primary: #{map-get($palette-blue-gold, primary-blue)};
+    --secondary: #{map-get($palette-blue-gold, secondary-blue)};
+    --success: #{map-get($palette-blue-gold, success)};
+    --danger: #{map-get($palette-blue-gold, danger)};
+    --warning: #{map-get($palette-blue-gold, warning)};
+    --info: #{map-get($palette-blue-gold, info)};
+
+    // Background colors
+    --bg-dark: #{map-get($palette-blue-gold, bg-dark)};
+    --bg-darker: #{map-get($palette-blue-gold, bg-darker)};
+    --surface: #{map-get($palette-blue-gold, surface)};
+
+    // Text colors
+    --text-primary: #{map-get($palette-blue-gold, text-primary-dark)};
+    --text-secondary: #{map-get($palette-blue-gold, text-secondary-dark)};
+
+    // Border colors
+    --border: #{map-get($palette-blue-gold, border-dark)};
+}
+
+// Override Bootstrap variables with your colors
+$primary: map-get($palette-blue-gold, primary-blue);
+$secondary: map-get($palette-blue-gold, secondary-blue);
+$success: map-get($palette-blue-gold, success);
+$danger: map-get($palette-blue-gold, danger);
+$warning: map-get($palette-blue-gold, warning);
+$info: map-get($palette-blue-gold, info);
+$light: map-get($palette-blue-gold, text-secondary-dark);
+$dark: map-get($palette-blue-gold, bg-darker);
+
+// Body background
+$body-bg: map-get($palette-blue-gold, bg-dark);
+$body-color: map-get($palette-blue-gold, text-primary-dark);
+
+// Card styles
+$card-bg: map-get($palette-blue-gold, surface);
+$card-border-color: map-get($palette-blue-gold, border-dark);
+
+// Input styles
+$input-bg: map-get($palette-blue-gold, surface);
+$input-border-color: map-get($palette-blue-gold, border-dark);
+$input-color: map-get($palette-blue-gold, text-primary-dark);
+
+// Table styles
+$table-bg: map-get($palette-blue-gold, surface);
+$table-border-color: map-get($palette-blue-gold, border-dark);
+
+// Navbar styles
+$navbar-dark-bg: map-get($palette-blue-gold, surface);
+$navbar-dark-color: map-get($palette-blue-gold, text-primary-dark);
+
+// Custom background utilities
+.bg-surface {
+    background-color: map-get($palette-blue-gold, surface) !important;
+}
+
+.bg-dark {
+    background-color: map-get($palette-blue-gold, bg-dark) !important;
+}
+
+// Custom text colors
+.text-crypto-success {
+    color: map-get($palette-blue-gold, success) !important;
+}
+
+.text-crypto-danger {
+    color: map-get($palette-blue-gold, danger) !important;
+}
+
+// Trading specific styles
+.price-up {
+    color: map-get($palette-blue-gold, success) !important;
+}
+
+.price-down {
+    color: map-get($palette-blue-gold, danger) !important;
+}
+
+// Custom border colors
+.border-crypto {
+    border-color: map-get($palette-blue-gold, border-dark) !important;
+}
